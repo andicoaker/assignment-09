@@ -1,15 +1,29 @@
 
 // Part 08: getSeasonForMonth()
 
-// Write a function called getSeasonForMonth() that accepts 
+// Write a function called getSeasonForMonth() that accepts
 // an integer as an argument and returns the season of year.
 //   e.g. getSeasonForMonth(6) => 'summer'
 
 // The function should be built to accept integer values
 // of 1-12.
-// 
-// It should also return false if the function is given 
+//
+// It should also return false if the function is given
 // bad input.
+
+var getSeasonForMonth = function(month){
+  if (month === 12 || month === 1 || month ===2) {
+    return "winter";
+  } else if (month === 3 || month === 4 || month ===5) {
+    return "spring";
+  } else if (month === 6 || month === 7 || month ===8) {
+    return "summer";
+  } else if (month === 9 || month === 10 || month === 11) {
+    return "fall";
+  } else {
+    return false;
+  }
+}
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*

@@ -2,18 +2,25 @@
  * Part 05: makeSimpleGreeting()
  *
  * Write a function called makeSimpleGreeting that takes a string and a boolean
- * as arguments. The string will be a username and the boolean will signify 
+ * as arguments. The string will be a username and the boolean will signify
  * a true/false value for a returning customer.
- * 
- * If the 2nd input is the boolean `true`, 
- * then the function should return a 'Welcome back,' greeting
- *    Ex: makeSimpleGreeting('Janet', true) //=> "Welcome back, Janet." 
  *
- * If the 2nd input is the boolean `false`, 
+ * If the 2nd input is the boolean `true`,
+ * then the function should return a 'Welcome back,' greeting
+ *    Ex: makeSimpleGreeting('Janet', true) //=> "Welcome back, Janet."
+ *
+ * If the 2nd input is the boolean `false`,
  * then the function should return a 'Hello there' greeting
- *    Ex: makeSimpleGreeting('Janet', false) //=> "Hello there, Janet!" 
+ *    Ex: makeSimpleGreeting('Janet', false) //=> "Hello there, Janet!"
  */
 
+function makeSimpleGreeting(userName,returningCustomer){
+  if (returningCustomer === true) {
+    return "Welcome back, " + userName + ".";
+  } else {
+    return "Hello there, " + userName + "!";
+    }
+}
 
 
 

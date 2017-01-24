@@ -6,7 +6,11 @@
 // it does not count towards the sum.
 
 var loneSum = function(val1, val2, val3){
-  
+  var result = (val1 + val2 + val3);
+  return result;
+  if (val1 === val2 || val2 === val3 || val3 === val1){
+
+  }
 }
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*

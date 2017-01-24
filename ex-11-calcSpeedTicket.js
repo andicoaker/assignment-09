@@ -2,23 +2,23 @@
 // Part 11: calcSpeedTicket()
 
 // Write a function that calculates a speeding ticket:
-// The function should take 3 arguments: 
+// The function should take 3 arguments:
 //    (1) the speedLimit
 //    (2) the user's clocked speed
 //    (3) a boolean value for whether the user was in
-//        a school-zone or work-zone 
+//        a school-zone or work-zone
 
-// fine schedule: 
+// fine schedule:
 //   less than speed limit + 5mph : $0
 //   less than 20 mph             : $150
 //   20 mph or more               : $250
 //
 
 // Examples:
-//  calcSpeedTicket(20, 30, true) 
+//  calcSpeedTicket(20, 30, true)
 //  => 300
 
-//  calcSpeedTicket(20, 30, true) 
+//  calcSpeedTicket(20, 30, false)
 //  => 150
 
 
