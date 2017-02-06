@@ -22,6 +22,28 @@
 //  => 150
 
 
+var calcSpeedTicket = function (speedLimit, clockedSpeed, zone) {
+
+  var milesOver = clockedSpeed - speedLimit;
+  // console.log(milesOver);
+  var fineAmount = 0
+
+  if (milesOver < 20 && milesOver > 0) {
+    fineAmount = 150;
+    // console.log(fineAmount);
+  } 
+
+  if (milesOver >= 20) {
+    fineAmount = 250;
+  }
+  if (milesOver < 5){
+    fineAmount = 0;
+  }
+
+  return fineAmount
+}
+
+
 
 
 

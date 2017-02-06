@@ -7,10 +7,22 @@
 
 var loneSum = function(val1, val2, val3){
   var result = (val1 + val2 + val3);
-  return result;
-  if (val1 === val2 || val2 === val3 || val3 === val1){
 
+  // // (val1 === val2 || val2 === val3 || val3 === val1){
+  if (val1 === val2 && val1 === val3) {
+    return 0;
   }
+  if (val1 === val2) {
+    return val3;
+  }
+  if (val1 === val3) {
+    return val2;
+  }
+  if (val2 === val3) {
+    return val1;
+  }
+  // console.log(result);
+  return result;
 }
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
